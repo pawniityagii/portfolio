@@ -1,35 +1,49 @@
-# Pawni Tyagi — Portfolio
+# Portfolio
 
-Static site. One HTML file plus a folder of screenshots. No build step, no dependencies.
+My personal portfolio — the projects I have built, what each one taught me, and how to reach me.
 
-    index.html
-    shots/        seven screenshots used on the page
+**Live:** https://pawni-tyagi.vercel.app
 
-## Deploy on Vercel (the way you did FoodBridge)
+## What's here
 
-1. Make a new GitHub repo, e.g. `portfolio`.
-2. Put `index.html` and the `shots/` folder in the root of it and push.
-3. On vercel.com: Add New -> Project -> import that repo.
-4. Framework preset: **Other**. Leave build command and output directory empty.
-5. Deploy. You get `portfolio-<something>.vercel.app`.
-6. Project -> Settings -> Domains to rename it to something like `pawnityagi.vercel.app`.
+A single static page. No framework, no build step, no dependencies — one HTML file with
+inline CSS and a handful of inline SVG diagrams, plus a folder of screenshots.
 
-That URL is what goes on your resume and in application forms.
+```
+index.html     the whole page: styles, markup, diagrams
+shots/         screenshots of the projects featured on the page
+```
 
-## Alternative: GitHub Pages
+## Running it locally
 
-Push the same two items, then repo Settings -> Pages -> Source: `main`, folder `/root`.
-You get `pawniityagii.github.io/portfolio`.
+Clone and open `index.html` in a browser. That's it.
 
-## Editing later
+```bash
+git clone https://github.com/pawniityagii/portfolio.git
+cd portfolio
+open index.html      # or just double-click the file
+```
 
-Everything is in `index.html` — the CSS sits in one `<style>` block at the top,
-the content is plain HTML below it. To swap a screenshot, drop a new file into
-`shots/` with the same name.
+## Notes on the build
 
-## Note on the link preview image
+- Layout is CSS grid and flexbox; no CSS framework.
+- Light and dark themes are driven by CSS custom properties and `prefers-color-scheme`.
+- The decorative diagrams (confusion matrix, metric relationships, the radial field in the
+  header) are hand-written inline SVG rather than images, so they stay sharp and follow the
+  theme colours.
+- Motion is limited and respects `prefers-reduced-motion`.
+- Fonts come from Google Fonts: Schibsted Grotesk, Source Serif 4, IBM Plex Mono.
 
-`og:image` points at `shots/fb-landing.jpg` relative to the site. Some platforms
-(LinkedIn, WhatsApp) want a full URL. Once you know your domain, change that one
-line to the absolute address, e.g.
-`<meta property="og:image" content="https://pawnityagi.vercel.app/shots/fb-landing.jpg">`
+## Projects featured
+
+| Project | Repo |
+| --- | --- |
+| FoodBridge — food redistribution platform | [FoodBridge](https://github.com/pawniityagii/FoodBridge) |
+| Fraud Detection System | [Fraud-Detection-System](https://github.com/pawniityagii/Fraud-Detection-System) |
+| Mental Health Sentiment Analysis | [Mental-Health-Sentiment-Analysis](https://github.com/pawniityagii/Mental-Health-Sentiment-Analysis) |
+| Skincare Product Recommender | [Skincare_Product_Recommender](https://github.com/pawniityagii/Skincare_Product_Recommender) |
+| Digital Marketing Dashboard (Power BI) | — |
+
+## Contact
+
+pawniityagii@gmail.com · [LinkedIn](https://www.linkedin.com/in/pawnityagi)
