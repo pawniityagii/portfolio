@@ -28,9 +28,9 @@ open index.html      # or just double-click the file
 
 - Layout is CSS grid and flexbox; no CSS framework.
 - Light and dark themes are driven by CSS custom properties and `prefers-color-scheme`.
-- The decorative diagrams (confusion matrix, metric relationships, the radial field in the
-  header) are hand-written inline SVG rather than images, so they stay sharp and follow the
-  theme colours.
+- The decorative diagrams (the fraud confusion matrix, the YOLOv8 detection boxes, the radial
+  field in the header) are hand-written inline SVG rather than images, so they stay sharp and
+  follow the theme colours.
 - Motion is limited and respects `prefers-reduced-motion`.
 - Fonts come from Google Fonts: Schibsted Grotesk, Source Serif 4, IBM Plex Mono.
 
@@ -40,9 +40,10 @@ open index.html      # or just double-click the file
 | --- | --- |
 | FoodBridge — food redistribution platform | [FoodBridge](https://github.com/pawniityagii/FoodBridge) |
 | Fraud Detection System | [Fraud-Detection-System](https://github.com/pawniityagii/Fraud-Detection-System) |
+| Bank Customer Churn Intelligence | [bank-churn-intelligence](https://github.com/pawniityagii/bank-churn-intelligence) |
+| PPE Safety-Helmet Detection (YOLOv8) | [ppe-detection-yolov8](https://github.com/pawniityagii/ppe-detection-yolov8) |
 | Mental Health Sentiment Analysis | [Mental-Health-Sentiment-Analysis](https://github.com/pawniityagii/Mental-Health-Sentiment-Analysis) |
 | Skincare Product Recommender | [Skincare_Product_Recommender](https://github.com/pawniityagii/Skincare_Product_Recommender) |
-| Digital Marketing Dashboard (Power BI) | — |
 
 ## Contact
 
