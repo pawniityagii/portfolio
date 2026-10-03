@@ -3,12 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Pawni Tyagi — B.Tech Computer Science, 2026. Portfolio of five built projects: FoodBridge, fraud detection, sentiment clustering, a skincare recommender and a Power BI marketing dashboard.">
+<meta name="description" content="Pawni Tyagi — B.Tech Computer Science, 2026. Portfolio of six built projects: FoodBridge, a fraud classifier, a bank churn intelligence dashboard, YOLOv8 PPE detection, sentiment clustering and a skincare recommender.">
 <meta name="author" content="Pawni Tyagi">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pawni Tyagi — Portfolio">
-<meta property="og:description" content="Five projects, the code behind each one, and what actually broke along the way.">
-<meta property="og:image" content="https://pawni-tyagi.vercel.app/shots/fb-landing.jpg">
+<meta property="og:description" content="Six projects, the code behind each one, and what actually broke along the way.">
+<meta property="og:image" content="https://pawni-tyagi.vercel.app/shots/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pawni Tyagi — portfolio of six projects">
 <meta property="og:url" content="https://pawni-tyagi.vercel.app">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%232F5D50' stroke-width='3'/%3E%3Ccircle cx='16' cy='5' r='3' fill='%23B4702F'/%3E%3C/svg%3E">
@@ -332,7 +335,7 @@
     <p class="eyebrow rise d1">B.Tech Computer Science · Graduated 2026</p>
     <h1 class="rise d1">Pawni<br>Tyagi</h1>
     <p class="tagline rise d2">I build things that work end to end, then <span class="swash"><b>figure out why they broke</b><svg viewBox="0 0 300 12" preserveAspectRatio="none"><path d="M3 8 C 60 2, 120 11, 180 5 S 270 3, 297 7"/></svg></span>.</p>
-    <p class="intro rise d3">Most of what I know came from actually shipping something: a team capstone I ended up debugging for everyone, a fraud model where accuracy was the wrong thing to chase, a clustering project whose own output I had to argue with, a Power BI dashboard I had to explain to people who do not read charts for a living. I work across <strong>full stack</strong>, <strong>Python</strong>, <strong>SQL</strong> and <strong>data/ML</strong>, and I am looking for the first full-time role where I get to keep doing it.</p>
+    <p class="intro rise d3">Most of what I know came from actually shipping something: a team capstone I ended up debugging for everyone, a fraud model where accuracy was the wrong thing to chase, a clustering project whose own output I had to argue with, a churn dashboard that had to end in a plain-English recommendation for whoever controls the budget, and an object detector I judged on the honest metric instead of the flattering one. I work across <strong>full stack</strong>, <strong>Python</strong>, <strong>SQL</strong>, <strong>data/ML</strong> and a bit of <strong>computer vision</strong>, and I am looking for the first full-time role where I get to keep doing it.</p>
 
     <div class="meta-row rise d4">
       <span>Noida / Delhi NCR · open to relocate</span><span class="dot"></span><span>Available immediately</span>
@@ -346,20 +349,20 @@
 
     <div class="ledger rise d6">
       <div><b>2026</b><span>B.Tech, CS</span></div>
-      <div><b>05</b><span>Built projects</span></div>
+      <div><b>06</b><span>Built projects</span></div>
       <div><b>02</b><span>Internships</span></div>
     </div>
 
     <div class="marquee rise d6" aria-hidden="true">
       <div class="track">
-        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
-        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
+        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
+        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
       </div>
     </div>
   </header>
 
   <section id="projects">
-    <div class="sec-head"><span class="no">&sect; 01</span><h2>Projects</h2><span class="bar"></span><span class="note">five builds, code linked on each</span></div>
+    <div class="sec-head"><span class="no">&sect; 01</span><h2>Projects</h2><span class="bar"></span><span class="note">six builds, code linked on each</span></div>
 
     <article class="project">
       <div class="idx">01</div>
@@ -445,6 +448,67 @@
     <article class="project">
       <div class="idx">03</div>
       <div>
+        <p class="role">Data &amp; ML &middot; solo &middot; built to be acted on</p>
+        <h3>Bank Customer Churn Intelligence</h3>
+        <p class="lead">A churn system for a retail bank that does not stop at a prediction &mdash; it says which customers are leaving, why, and what a retention team should do about it, in language a manager can read.</p>
+        <div class="plinks">
+          <a class="plink" href="https://github.com/pawniityagii/bank-churn-intelligence" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 00-3.23 19.87c.51.1.7-.22.7-.49l-.01-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.19-1.14-1.5-1.14-1.5-.93-.64.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.98.86.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.83 1.05a9.7 9.7 0 015.15 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.41.21 2.45.1 2.71.66.72 1.05 1.63 1.05 2.75 0 3.93-2.38 4.8-4.66 5.05.37.32.7.94.7 1.9l-.01 2.81c0 .27.18.6.7.49A10.2 10.2 0 0012 1.8z"/></svg>Source</a>
+        </div>
+
+        <div class="gallery">
+          <figure class="frame">
+            <div class="bar"><s></s><s></s><s></s><span>power bi &mdash; churn intelligence</span></div>
+            <img src="shots/churn-dashboard.jpg" alt="Churn dashboard: churn rate by geography, product count, activity and age band, top churn drivers, and customers split into risk bands">
+            <figcaption class="cap">churn by geography, products, age, activity &middot; risk bands</figcaption>
+          </figure>
+        </div>
+
+        <div class="note-box">
+          <p><strong>What the data actually said:</strong> age is the strongest signal &mdash; churn peaks at 56&#37; for ages 50-59 &mdash; followed by inactivity (27&#37; vs 14&#37; for active members) and the German market (32&#37; vs ~16&#37; elsewhere). The sharp one is product count: customers holding 3-4 products churn at 83-100&#37;, a non-linear jump the segment view exposes and a single accuracy number would have hidden.</p>
+        </div>
+
+        <p>I put the Kaggle &ldquo;Churn Modelling&rdquo; dataset (10,000 customers, 20.4&#37; baseline churn) behind a SQL layer in SQLite and wrote the segment queries there &mdash; churn by geography, product holding, age band, activity &mdash; rather than slicing frames in pandas. A random forest with logistic-regression explainability reached 0.86 ROC-AUC and sorted 1,791 high-risk customers into low, medium and high bands. The last step is a bounded LLM API call that turns the computed numbers into a plain-English risk-and-action summary a non-technical manager can use, so the project ends with a recommendation, not a chart.</p>
+        <div class="stack"><span>SQL / SQLite</span><span>Python</span><span>scikit-learn</span><span>Random Forest</span><span>Power BI</span><span>LLM API</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="idx">04</div>
+      <div>
+        <p class="role">Computer vision &middot; solo &middot; trained, evaluated, deployed</p>
+        <h3>PPE Safety-Helmet Detection</h3>
+        <p class="lead">A YOLOv8 object detector that finds people and safety helmets in workplace images &mdash; the whole pipeline, from a public dataset through training to a live demo anyone can upload an image to.</p>
+        <div class="plinks">
+          <a class="plink live" href="https://pawnii-ppe-helmet-detection.static.hf.space/index.html" target="_blank" rel="noopener"><span class="pulse"></span>Live demo</a>
+          <a class="plink" href="https://github.com/pawniityagii/ppe-detection-yolov8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 00-3.23 19.87c.51.1.7-.22.7-.49l-.01-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.19-1.14-1.5-1.14-1.5-.93-.64.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.98.86.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.83 1.05a9.7 9.7 0 015.15 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.41.21 2.45.1 2.71.66.72 1.05 1.63 1.05 2.75 0 3.93-2.38 4.8-4.66 5.05.37.32.7.94.7 1.9l-.01 2.81c0 .27.18.6.7.49A10.2 10.2 0 0012 1.8z"/></svg>Source &amp; notebook</a>
+        </div>
+
+        <div class="diagram">
+          <svg viewBox="0 0 460 190" role="img" aria-label="Object detection boxes around a person and a safety helmet, with evaluation metrics">
+            <rect x="2" y="2" width="252" height="186" rx="4" fill="none" stroke="var(--line)"/>
+            <rect x="92" y="66" width="94" height="118" rx="2" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <rect x="92" y="49" width="92" height="16" rx="2" fill="var(--accent)"/>
+            <text x="99" y="61" style="font:500 10px 'IBM Plex Mono',monospace;fill:var(--paper)">person &middot; 0.94</text>
+            <rect x="104" y="72" width="52" height="28" rx="2" fill="none" stroke="var(--ochre)" stroke-width="2"/>
+            <rect x="104" y="104" width="86" height="16" rx="2" fill="var(--ochre)"/>
+            <text x="111" y="116" style="font:500 10px 'IBM Plex Mono',monospace;fill:var(--paper)">helmet &middot; 0.91</text>
+            <line x1="278" y1="40" x2="278" y2="156" stroke="var(--line)"/>
+            <text class="dg-s" x="300" y="56">EVALUATION</text>
+            <text class="dg-t" x="300" y="86">mAP@50 &middot; 88.6&#37;</text>
+            <text class="dg-s" x="300" y="112">precision 92.2&#37;</text>
+            <text class="dg-s" x="300" y="132">recall 87.0&#37;</text>
+          </svg>
+          <p class="d-cap">YOLOv8n fine-tuned on a public hard-hat dataset &middot; classes: head, helmet, person</p>
+        </div>
+
+        <p>Training starts from COCO-pretrained YOLOv8n and fine-tunes with transfer learning on a public hard-hat dataset, so a few thousand images are enough instead of training from scratch. I evaluated on mAP rather than accuracy, and while I quote mAP@50 I keep mAP@50-95 in view too, because averaging across stricter overlap thresholds is the more honest score for a detector. The model ships as a Gradio app on Hugging Face with a confidence-threshold slider &mdash; raise it and false positives drop but real objects start getting missed &mdash; alongside a reproducible Colab training notebook so the whole thing can be rebuilt.</p>
+        <div class="stack"><span>Python</span><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>Transfer learning</span><span>Gradio / Hugging Face</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="idx">05</div>
+      <div>
         <p class="role">NLP &middot; unsupervised &middot; solo</p>
         <h3>Mental Health Sentiment Analysis</h3>
         <p class="lead">TF-IDF and KMeans clustering over mental-health-related text, with a dashboard on top &mdash; and a result I ended up arguing with rather than reporting.</p>
@@ -475,7 +539,7 @@
     </article>
 
     <article class="project">
-      <div class="idx">04</div>
+      <div class="idx">06</div>
       <div>
         <p class="role">Recommender &middot; solo &middot; small and self-contained</p>
         <h3>Skincare Product Recommender</h3>
@@ -502,37 +566,6 @@
         <div class="stack"><span>Python</span><span>Recommendation logic</span><span>Ingredient filtering</span><span>Product data</span></div>
       </div>
     </article>
-
-    <article class="project">
-      <div class="idx">05</div>
-      <div>
-        <p class="role">Business intelligence &middot; solo &middot; built for a non-technical audience</p>
-        <h3>Digital Marketing Dashboard</h3>
-        <p class="lead">A Power BI dashboard for comparing campaigns and deciding where the next rupee of budget goes &mdash; built for someone who needs a decision, not a model.</p>
-
-        <div class="metric-panel">
-          <svg viewBox="0 0 460 210" role="img" aria-label="Diagram showing CTR, conversions and ROI read together rather than separately">
-            <path class="mp-link" d="M120 66 L 340 66"/>
-            <path class="mp-link" d="M104 90 L 218 150"/>
-            <path class="mp-link" d="M356 90 L 242 150"/>
-            <rect class="mp-node" x="18" y="40" width="172" height="48" rx="4"/>
-            <text class="mp-label" x="34" y="62">CTR</text>
-            <text class="mp-sub" x="34" y="77">did they click</text>
-            <rect class="mp-node" x="270" y="40" width="172" height="48" rx="4"/>
-            <text class="mp-label" x="286" y="62">CONVERSIONS</text>
-            <text class="mp-sub" x="286" y="77">did they act</text>
-            <rect class="mp-node warn" x="144" y="150" width="172" height="48" rx="4"/>
-            <text class="mp-label" x="160" y="172">ROI</text>
-            <text class="mp-sub" x="160" y="187">was it worth the spend</text>
-            <text class="mp-sub" x="186" y="28">read together, not separately</text>
-          </svg>
-          <p class="mp-cap">the argument the dashboard was built to make</p>
-        </div>
-
-        <p>I cleaned and processed the raw campaign data, then built CTR, conversion and ROI measures into interactive charts with slicers and filters so campaigns could be compared side by side. The useful part was insisting the metrics be read together: high CTR with low conversions is a post-click problem, not a creative win, and the campaign with a lower CTR but a higher ROI is often the one worth more money. That is an argument you have to make out loud, to someone who controls the budget, without leaning on the word "metric".</p>
-        <div class="stack"><span>Power BI</span><span>DAX measures</span><span>Data cleaning</span><span>CTR / conversion / ROI</span><span>Stakeholder reporting</span></div>
-      </div>
-    </article>
   </section>
 
   <section id="skills">
@@ -540,7 +573,7 @@
     <div class="skills">
       <div class="skill"><h3>Languages <i>01</i></h3><p>Python, SQL, JavaScript, HTML/CSS <em>— SQL comfortably: joins and aggregations without looking them up.</em></p></div>
       <div class="skill"><h3>Web <i>02</i></h3><p>React, REST APIs, full-stack application development, role-based access, Git and GitHub pull-request workflow</p></div>
-      <div class="skill"><h3>Data &amp; ML <i>03</i></h3><p>pandas, NumPy, scikit-learn, clustering and dimensionality reduction, machine learning and deep learning fundamentals</p></div>
+      <div class="skill"><h3>Data &amp; ML <i>03</i></h3><p>pandas, NumPy, scikit-learn, clustering and dimensionality reduction, computer vision and object detection (YOLOv8, PyTorch, OpenCV), LLM API integration, machine learning and deep learning fundamentals</p></div>
       <div class="skill"><h3>Big data &amp; cloud <i>04</i></h3><p>Apache Spark, Databricks, AWS and Azure data services <em>— from structured coursework, not production.</em></p></div>
       <div class="skill"><h3>Analytics &amp; BI <i>05</i></h3><p>Power BI, Tableau, dashboard design, metric definition, reporting to non-technical stakeholders</p></div>
       <div class="skill"><h3>Fundamentals <i>06</i></h3><p>DBMS, Operating Systems, Computer Networks, data structures and algorithms</p></div>
@@ -556,7 +589,7 @@
       </div></article>
       <article><div class="q">02</div><div>
         <h3>I translate between technical work and business decisions</h3>
-        <p>The marketing dashboard was not built for analysts. It was built for someone deciding where money goes, which meant the charts had to carry an argument — spend here, not there — and I had to defend that argument in plain language. I also presented FoodBridge to an assessment panel including non-technical assessors, where nobody wanted the stack diagram.</p>
+        <p>The churn project does not end at a model. It ends at a plain-English summary telling a retention manager which customers to call first and why, which meant the analysis had to carry a decision — act on these segments, not those — not just a ROC-AUC number. I also presented FoodBridge to an assessment panel including non-technical assessors, where nobody wanted the stack diagram.</p>
       </div></article>
       <article><div class="q">03</div><div>
         <h3>I read my own output sceptically</h3>
@@ -604,7 +637,7 @@
       <a class="btn" href="https://www.linkedin.com/in/pawnityagi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.01A2.5 2.5 0 014.98 3.5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21h-3.98V9z"/></svg>LinkedIn</a>
       <a class="btn" href="https://github.com/pawniityagii" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 00-3.23 19.87c.51.1.7-.22.7-.49l-.01-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.19-1.14-1.5-1.14-1.5-.93-.64.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.98.86.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.83 1.05a9.7 9.7 0 015.15 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.41.21 2.45.1 2.71.66.72 1.05 1.63 1.05 2.75 0 3.93-2.38 4.8-4.66 5.05.37.32.7.94.7 1.9l-.01 2.81c0 .27.18.6.7.49A10.2 10.2 0 0012 1.8z"/></svg>GitHub</a>
     </div>
-    <div class="colophon"><span>Pawni Tyagi · Noida, India</span><span>Updated September 2026</span></div>
+    <div class="colophon"><span>Pawni Tyagi · Noida, India</span><span>Updated October 2026</span></div>
   </footer>
 </div>
 
