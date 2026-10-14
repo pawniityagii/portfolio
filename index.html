@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Pawni Tyagi — B.Tech Computer Science, 2026. Portfolio of six built projects: FoodBridge, a fraud classifier, a bank churn intelligence dashboard, YOLOv8 PPE detection, sentiment clustering and a skincare recommender.">
+<meta name="description" content="Pawni Tyagi — B.Tech Computer Science, 2026. Portfolio of seven built projects, led by Dayboard, an AI chief of staff that reads Gmail and Calendar and drafts your morning — plus FoodBridge, a fraud classifier, a bank churn dashboard, YOLOv8 helmet detection, sentiment clustering and a skincare recommender.">
 <meta name="author" content="Pawni Tyagi">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pawni Tyagi — Portfolio">
-<meta property="og:description" content="Six projects, the code behind each one, and what actually broke along the way.">
+<meta property="og:description" content="Seven projects led by Dayboard, an AI chief of staff — the code behind each one, and what actually broke along the way.">
 <meta property="og:image" content="https://pawni-tyagi.vercel.app/shots/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pawni Tyagi — portfolio of six projects">
+<meta property="og:image:alt" content="Pawni Tyagi — portfolio of seven projects">
 <meta property="og:url" content="https://pawni-tyagi.vercel.app">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%232F5D50' stroke-width='3'/%3E%3Ccircle cx='16' cy='5' r='3' fill='%23B4702F'/%3E%3C/svg%3E">
@@ -285,6 +285,15 @@
   @keyframes blip { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.4; transform:scale(.8)} }
   .wip { font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); margin:-6px 0 14px; }
 
+  .project.featured { border-top:0; padding-top:4px; }
+  .project.featured > .idx { color:var(--ochre); }
+  .project.featured > .idx::after { background:var(--ochre); width:30px; }
+  .feat-body { position:relative; border:1px solid var(--line); border-radius:10px; background:var(--raise); overflow:hidden; box-shadow:var(--shadow); transition:border-color .3s; }
+  .project.featured:hover .feat-body { border-color:var(--accent); }
+  .feat-body > .inner { padding:22px 22px 26px; }
+  .feat-body .cover { display:block; width:100%; height:auto; border-bottom:1px solid var(--line); }
+  .ribbon { position:absolute; top:14px; right:14px; z-index:2; font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--paper); background:var(--ochre); padding:5px 10px; border-radius:3px; box-shadow:var(--shadow); }
+  .frame.phone { max-width:300px; margin:0 auto; }
   .diagram { border:1px solid var(--line); border-radius:6px; background:var(--raise); padding:20px; margin:18px 0; box-shadow:var(--shadow); }
   .diagram svg { display:block; width:100%; height:auto; max-width:440px; margin:0 auto; }
   .diagram .d-cap { font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--faint); letter-spacing:.07em; text-transform:uppercase; text-align:center; margin-top:14px; }
@@ -335,7 +344,7 @@
     <p class="eyebrow rise d1">B.Tech Computer Science · Graduated 2026</p>
     <h1 class="rise d1">Pawni<br>Tyagi</h1>
     <p class="tagline rise d2">I build things that work end to end, then <span class="swash"><b>figure out why they broke</b><svg viewBox="0 0 300 12" preserveAspectRatio="none"><path d="M3 8 C 60 2, 120 11, 180 5 S 270 3, 297 7"/></svg></span>.</p>
-    <p class="intro rise d3">Most of what I know came from actually shipping something: a team capstone I ended up debugging for everyone, a fraud model where accuracy was the wrong thing to chase, a clustering project whose own output I had to argue with, a churn dashboard that had to end in a plain-English recommendation for whoever controls the budget, and an object detector I judged on the honest metric instead of the flattering one. I work across <strong>full stack</strong>, <strong>Python</strong>, <strong>SQL</strong>, <strong>data/ML</strong> and a bit of <strong>computer vision</strong>, and I am looking for the first full-time role where I get to keep doing it.</p>
+    <p class="intro rise d3">Most of what I know came from shipping something and then fixing it. The newest is <strong>Dayboard</strong>, an AI chief of staff that reads Gmail and Calendar over OAuth and leaves one morning screen &mdash; triaged inbox, drafted replies, flagged conflicts &mdash; where the same agent runs the live app and the zero-setup demo. Before it: a team capstone I ended up debugging for everyone, a fraud model where accuracy was the wrong thing to chase, a clustering project whose own output I had to argue with, a churn dashboard that had to end in a plain-English recommendation, and a helmet detector I judged on the honest metric instead of the flattering one. I work across <strong>full stack</strong>, <strong>Python</strong>, <strong>APIs &amp; OAuth</strong>, <strong>SQL</strong>, <strong>data/ML</strong> and a bit of <strong>computer vision</strong>, and I am looking for the first full-time role where I get to keep doing it.</p>
 
     <div class="meta-row rise d4">
       <span>Noida / Delhi NCR · open to relocate</span><span class="dot"></span><span>Available immediately</span>
@@ -349,23 +358,109 @@
 
     <div class="ledger rise d6">
       <div><b>2026</b><span>B.Tech, CS</span></div>
-      <div><b>06</b><span>Built projects</span></div>
+      <div><b>07</b><span>Built projects</span></div>
       <div><b>02</b><span>Internships</span></div>
     </div>
 
     <div class="marquee rise d6" aria-hidden="true">
       <div class="track">
-        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
-        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
+        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> FastAPI <i></i> OAuth 2.0 <i></i> Gemini <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
+        <span class="chip">Python <i></i> React <i></i> SQL <i></i> scikit-learn <i></i> YOLOv8 <i></i> OpenCV <i></i> Power BI <i></i> Apache Spark <i></i> pandas <i></i> REST APIs <i></i> FastAPI <i></i> OAuth 2.0 <i></i> Gemini <i></i> LLM APIs <i></i> Git <i></i> Tableau <i></i> NumPy <i></i> Databricks <i></i></span>
       </div>
     </div>
   </header>
 
   <section id="projects">
-    <div class="sec-head"><span class="no">&sect; 01</span><h2>Projects</h2><span class="bar"></span><span class="note">six builds, code linked on each</span></div>
+    <div class="sec-head"><span class="no">&sect; 01</span><h2>Projects</h2><span class="bar"></span><span class="note">seven builds, code linked on each</span></div>
+
+    <article class="project featured">
+      <div class="idx">01</div>
+      <div>
+        <div class="feat-body">
+          <span class="ribbon">Latest build &middot; 2026</span>
+          <img class="cover" src="shots/db-cover.jpg" alt="Dayboard — an AI chief of staff that reads your Gmail and Calendar and leaves one morning screen: the day, the emails that need a reply, and the reply already drafted">
+          <div class="inner">
+            <p class="role">AI web app &middot; solo &middot; deployed on Render</p>
+            <h3>Dayboard</h3>
+            <p class="lead">An AI chief of staff you open with your coffee. It reads your Gmail and Calendar before you are properly awake and leaves one calm screen &mdash; the day in a line, the emails that genuinely need a reply each with a draft already written, your schedule with any clashes flagged, and the day&rsquo;s action items. Nothing is sent until you approve it.</p>
+            <div class="plinks">
+              <a class="plink live" href="https://dayboard-j0af.onrender.com" target="_blank" rel="noopener"><span class="pulse"></span>Live demo</a>
+              <a class="plink" href="https://github.com/pawniityagii/dayboard" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 00-3.23 19.87c.51.1.7-.22.7-.49l-.01-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.19-1.14-1.5-1.14-1.5-.93-.64.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.98.86.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.83 1.05a9.7 9.7 0 015.15 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.41.21 2.45.1 2.71.66.72 1.05 1.63 1.05 2.75 0 3.93-2.38 4.8-4.66 5.05.37.32.7.94.7 1.9l-.01 2.81c0 .27.18.6.7.49A10.2 10.2 0 0012 1.8z"/></svg>Source</a>
+            </div>
+            <p class="wip">Try it with zero setup &mdash; the public link shows the full demo on sample data. Live sign-in reads a real inbox, but Gmail is a restricted Google scope, so it is enabled for accounts added as test users.</p>
+
+            <div class="diagram">
+              <svg viewBox="0 0 460 206" role="img" aria-label="One agent with two swappable interfaces. The data source is sample data in demo mode or real Gmail and Calendar in live mode. The reasoning is deterministic rules as a fallback or Gemini. The same pipeline — fetch, triage, draft, detect conflicts, action items, summary — runs in both modes.">
+                <text class="dg-s" x="8" y="12">DATA SOURCE &middot; DataProvider</text>
+                <rect class="dg-box plain" x="8" y="18" width="128" height="28" rx="3"/>
+                <text class="dg-t" x="20" y="36">sample data &middot; demo</text>
+                <rect class="dg-box" x="8" y="52" width="128" height="28" rx="3"/>
+                <text class="dg-t" x="20" y="70">Gmail + Calendar &middot; live</text>
+
+                <text class="dg-s" x="324" y="12">REASONING &middot; agent/llm.py</text>
+                <rect class="dg-box plain" x="324" y="18" width="128" height="28" rx="3"/>
+                <text class="dg-t" x="336" y="36">rules &middot; fallback</text>
+                <rect class="dg-box" x="324" y="52" width="128" height="28" rx="3"/>
+                <text class="dg-t" x="336" y="70">Gemini</text>
+
+                <path class="dg-l" d="M136 64 H 182"/>
+                <path class="dg-l" d="M324 64 H 278"/>
+
+                <rect class="dg-box" x="182" y="44" width="96" height="40" rx="4"/>
+                <text class="dg-t" x="198" y="62">one agent</text>
+                <text class="dg-s" x="198" y="76">core.py</text>
+
+                <path class="dg-l" d="M230 84 V 110"/>
+                <text class="dg-s" x="8" y="106">SAME PIPELINE &middot; demo and live</text>
+
+                <rect class="dg-box plain" x="8"   y="116" width="62" height="26" rx="3"/><text class="dg-s" x="20" y="133">fetch</text>
+                <path class="dg-l" d="M70 129 H 82"/>
+                <rect class="dg-box plain" x="82"  y="116" width="62" height="26" rx="3"/><text class="dg-s" x="94" y="133">triage</text>
+                <path class="dg-l" d="M144 129 H 156"/>
+                <rect class="dg-box plain" x="156" y="116" width="62" height="26" rx="3"/><text class="dg-s" x="168" y="133">draft</text>
+                <path class="dg-l" d="M218 129 H 230"/>
+                <rect class="dg-box warn" x="230" y="116" width="72" height="26" rx="3"/><text class="dg-s" x="242" y="133">conflicts</text>
+                <path class="dg-l" d="M302 129 H 314"/>
+                <rect class="dg-box plain" x="314" y="116" width="64" height="26" rx="3"/><text class="dg-s" x="326" y="133">actions</text>
+                <path class="dg-l" d="M378 129 H 390"/>
+                <rect class="dg-box" x="390" y="116" width="62" height="26" rx="3"/><text class="dg-s" x="402" y="133">brief</text>
+              </svg>
+              <p class="d-cap">the honest-design decision: demo and live are the same agent &mdash; only the data source and the reasoning swap behind an interface</p>
+            </div>
+
+            <div class="gallery two">
+              <figure class="frame">
+                <div class="bar"><s></s><s></s><s></s><span>demo &mdash; sample data</span></div>
+                <img src="shots/db-day.jpg" alt="Dayboard in demo mode: a day summary, four count tiles, the emails needing a reply with a drafted response shown, today's schedule and an action-item checklist">
+                <figcaption class="cap">demo mode, rules fallback &middot; runs with zero keys</figcaption>
+              </figure>
+              <figure class="frame">
+                <div class="bar"><s></s><s></s><s></s><span>live &mdash; your google account</span></div>
+                <img src="shots/db-night.jpg" alt="Dayboard in live mode on a real Google account in the deep-blue night theme, with an Approve and send button under a drafted reply">
+                <figcaption class="cap">live on real Gmail &middot; Approve &amp; send, in-thread</figcaption>
+              </figure>
+            </div>
+            <div class="gallery">
+              <figure class="frame phone">
+                <div class="bar"><s></s><s></s><s></s><span>responsive &mdash; dusk</span></div>
+                <img src="shots/db-dusk-mobile.jpg" alt="Dayboard on a phone at dusk, a single responsive column">
+                <figcaption class="cap">the page is a sky that shifts dawn &rarr; day &rarr; dusk &rarr; night with your local clock</figcaption>
+              </figure>
+            </div>
+
+            <div class="note-box">
+              <p><strong>What actually broke:</strong> the OAuth callback kept failing with an <em>invalid-grant</em> error until I realised the PKCE <em>code_verifier</em> created at sign-in was never being carried through to the callback &mdash; stashing it and replaying it fixed the flow. All-day calendar events were faking scheduling conflicts until I flagged and excluded them, and the server running in UTC put the whole schedule out of order until I pinned the timezone. The kind of bug you only meet by shipping the thing.</p>
+            </div>
+
+            <p>The part I would defend in an interview is the architecture. The agent in <span class="mono">core.py</span> is identical in demo mode and live mode; only two things swap underneath it, each behind a small interface &mdash; the data source (a sample inbox, or real Gmail and Calendar over OAuth&nbsp;2.0 with PKCE) and the reasoning (deterministic rules, or Gemini). So the public demo is not a mockup, it is the real system running on sample data, which is exactly why it needs zero setup. The OAuth token lives in a signed session cookie with nothing stored server-side, and no email leaves without an explicit Approve&nbsp;&amp;&nbsp;send.</p>
+            <div class="stack"><span>Python</span><span>FastAPI</span><span>Jinja2</span><span>OAuth 2.0 + PKCE</span><span>Gmail / Calendar API</span><span>Gemini</span><span>Render</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
 
     <article class="project">
-      <div class="idx">01</div>
+      <div class="idx">02</div>
       <div>
         <p class="role">Final-year capstone &middot; team project &middot; deployed</p>
         <h3>FoodBridge</h3>
@@ -412,7 +507,7 @@
     </article>
 
     <article class="project">
-      <div class="idx">02</div>
+      <div class="idx">03</div>
       <div>
         <p class="role">Machine learning &middot; solo</p>
         <h3>Fraud Detection System</h3>
@@ -446,7 +541,7 @@
     </article>
 
     <article class="project">
-      <div class="idx">03</div>
+      <div class="idx">04</div>
       <div>
         <p class="role">Data &amp; ML &middot; solo &middot; built to be acted on</p>
         <h3>Bank Customer Churn Intelligence</h3>
@@ -473,41 +568,39 @@
     </article>
 
     <article class="project">
-      <div class="idx">04</div>
+      <div class="idx">05</div>
       <div>
-        <p class="role">Computer vision &middot; solo &middot; trained, evaluated, deployed</p>
+        <p class="role">Computer vision &middot; solo &middot; trained and evaluated end to end</p>
         <h3>PPE Safety-Helmet Detection</h3>
-        <p class="lead">A YOLOv8 object detector that finds people and safety helmets in workplace images &mdash; the whole pipeline, from a public dataset through training to a live demo anyone can upload an image to.</p>
+        <p class="lead">A YOLOv8 detector that finds safety helmets (hard hats) in workplace images &mdash; the whole pipeline, from a public dataset through transfer-learning to evaluation on the honest metric, with a demo you can run on your own photos.</p>
         <div class="plinks">
-          <a class="plink live" href="https://pawnii-ppe-helmet-detection.static.hf.space/index.html" target="_blank" rel="noopener"><span class="pulse"></span>Live demo</a>
           <a class="plink" href="https://github.com/pawniityagii/ppe-detection-yolov8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 1.8a10.2 10.2 0 00-3.23 19.87c.51.1.7-.22.7-.49l-.01-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.19-1.14-1.5-1.14-1.5-.93-.64.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.98.86.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.06 0-1.12.4-2.03 1.06-2.75-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.83 1.05a9.7 9.7 0 015.15 0c1.96-1.33 2.82-1.05 2.82-1.05.56 1.41.21 2.45.1 2.71.66.72 1.05 1.63 1.05 2.75 0 3.93-2.38 4.8-4.66 5.05.37.32.7.94.7 1.9l-.01 2.81c0 .27.18.6.7.49A10.2 10.2 0 0012 1.8z"/></svg>Source &amp; notebook</a>
         </div>
 
-        <div class="diagram">
-          <svg viewBox="0 0 460 190" role="img" aria-label="Object detection boxes around a person and a safety helmet, with evaluation metrics">
-            <rect x="2" y="2" width="252" height="186" rx="4" fill="none" stroke="var(--line)"/>
-            <rect x="92" y="66" width="94" height="118" rx="2" fill="none" stroke="var(--accent)" stroke-width="2"/>
-            <rect x="92" y="49" width="92" height="16" rx="2" fill="var(--accent)"/>
-            <text x="99" y="61" style="font:500 10px 'IBM Plex Mono',monospace;fill:var(--paper)">person &middot; 0.94</text>
-            <rect x="104" y="72" width="52" height="28" rx="2" fill="none" stroke="var(--ochre)" stroke-width="2"/>
-            <rect x="104" y="104" width="86" height="16" rx="2" fill="var(--ochre)"/>
-            <text x="111" y="116" style="font:500 10px 'IBM Plex Mono',monospace;fill:var(--paper)">helmet &middot; 0.91</text>
-            <line x1="278" y1="40" x2="278" y2="156" stroke="var(--line)"/>
-            <text class="dg-s" x="300" y="56">EVALUATION</text>
-            <text class="dg-t" x="300" y="86">mAP@50 &middot; 88.6&#37;</text>
-            <text class="dg-s" x="300" y="112">precision 92.2&#37;</text>
-            <text class="dg-s" x="300" y="132">recall 87.0&#37;</text>
-          </svg>
-          <p class="d-cap">YOLOv8n fine-tuned on a public hard-hat dataset &middot; classes: head, helmet, person</p>
+        <div class="gallery two">
+          <figure class="frame">
+            <div class="bar"><s></s><s></s><s></s><span>inference &mdash; confidence 0.5</span></div>
+            <img src="shots/ppe-detect.jpg" alt="The model running on a workshop photo, drawing blue helmet boxes with confidence scores on three hard hats">
+            <figcaption class="cap">real model output &middot; hard hats boxed 0.83&ndash;0.93</figcaption>
+          </figure>
+          <figure class="frame">
+            <div class="bar"><s></s><s></s><s></s><span>training &mdash; 29 epochs</span></div>
+            <img src="shots/ppe-training.jpg" alt="Training curves: validation mAP, precision and recall rising over 29 epochs while box, cls and dfl losses fall">
+            <figcaption class="cap">validation mAP and precision/recall climbing, losses falling</figcaption>
+          </figure>
         </div>
 
-        <p>Training starts from COCO-pretrained YOLOv8n and fine-tunes with transfer learning on a public hard-hat dataset, so a few thousand images are enough instead of training from scratch. I evaluated on mAP rather than accuracy, and while I quote mAP@50 I keep mAP@50-95 in view too, because averaging across stricter overlap thresholds is the more honest score for a detector. The model ships as a Gradio app on Hugging Face with a confidence-threshold slider &mdash; raise it and false positives drop but real objects start getting missed &mdash; alongside a reproducible Colab training notebook so the whole thing can be rebuilt.</p>
+        <div class="note-box">
+          <p><strong>The honest score:</strong> mAP@50 landed at 0.79 (it peaked at 0.83 mid-training), mAP@50-95 at 0.65 &mdash; and mAP@50-95, averaged across stricter overlap thresholds, is the number I quote first because it is the harder, less flattering one. Precision 0.98 with recall 0.75 means the model is cautious: it rarely boxes a helmet that is not there, but it does miss some. It detects one class, the helmet &mdash; the person boxes in the image above were already drawn on the source photo, not model output.</p>
+        </div>
+
+        <p>Training starts from COCO-pretrained YOLOv8n and fine-tunes with transfer learning on a public hard-hat dataset, so a few thousand images are enough instead of training from scratch. I evaluated on mAP rather than accuracy, kept the full training history read back from the saved checkpoint rather than one cherry-picked number, and built it as a Gradio app with a confidence-threshold slider &mdash; raise it and false positives drop but real helmets start getting missed &mdash; alongside a reproducible Colab notebook so the whole thing can be rebuilt.</p>
         <div class="stack"><span>Python</span><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>Transfer learning</span><span>Gradio / Hugging Face</span></div>
       </div>
     </article>
 
     <article class="project">
-      <div class="idx">05</div>
+      <div class="idx">06</div>
       <div>
         <p class="role">NLP &middot; unsupervised &middot; solo</p>
         <h3>Mental Health Sentiment Analysis</h3>
@@ -539,7 +632,7 @@
     </article>
 
     <article class="project">
-      <div class="idx">06</div>
+      <div class="idx">07</div>
       <div>
         <p class="role">Recommender &middot; solo &middot; small and self-contained</p>
         <h3>Skincare Product Recommender</h3>
